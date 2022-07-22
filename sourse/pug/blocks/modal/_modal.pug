@@ -6,12 +6,17 @@ mixin modal()
 		+b.modal-win
 			+form-wrap
 				.text-center
-					+e.title.form-data.h3.ttu Обратный звонок
-					p.after-headline Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут
+					+e.title Заявка на участие
 
-				+input("Ваше Имя")(required)  
-				+e.BUTTON.btn.btn(type="submit"  )  
+				+input("телефон",'tel')(required)  
+				+input("название организации")(required)  
+				+input("E-ФИО")(required)  
+				+input("E-mail*")(required)  
+				+input("Должность")(required)  
+				+input("Дополнительно",'textarea')(required)
+				+e.BUTTON.btn(type="submit"  )   Подать заявку
 				+policy()
+			+e.footer
 	// #modal-call
 	
 	// end modals
