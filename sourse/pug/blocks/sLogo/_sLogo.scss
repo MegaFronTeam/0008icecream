@@ -3,6 +3,8 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	position: relative;
+	z-index: 3;
 	.container{
 		position: relative;
 		@include media-breakpoint-up(lg) {

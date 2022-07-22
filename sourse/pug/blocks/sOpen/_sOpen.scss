@@ -3,6 +3,9 @@
 	--sPT: #{rem(300)};
 	// --sPB: #{rem(160)};
 	--sPB: #{rem(100)};
+	@include media-breakpoint-down(sm) {
+		margin-top: -150px;
+	}
 	@include media-breakpoint-up(lg) {
 		--sPB: #{rem(180)};
 		h2{
@@ -38,6 +41,10 @@
 	}
 	&__col{
 
+	}
+	img{
+		max-width: 100%;
+		height: auto;
 	}
 	&__item{
 
