@@ -1,0 +1,17 @@
+mixin sOrg(data)
+	// start sOrg
+	+b.SECTION.sOrg.section#sOrg&attributes(attributes)
+		include svg.svg
+		.container
+			.row
+				.col-xl.col-lg-6
+					+e.content
+						h2 Организатор
+
+						p АССОЦИАЦИЯ КУЛИНАРОВ «ВКУС МИРА РУС»
+
+						p Ведущий эксперт индустрии кулинарии России, восстанавливающий рецепты старинных русских блюд, 	исторических блюд регионов России, а также формирующий инновационные тренды кулинарной индустрии России.
+				+e.col.col-xl-auto.col-lg-6
+					+img("img/org-img.png")
+
+	// end sOrg

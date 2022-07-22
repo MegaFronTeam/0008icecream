@@ -1,0 +1,118 @@
+// start .sHoliday
+.sHoliday {
+	--sPT: #{rem(100)};
+	position: relative;
+	&::before{
+		content: '';
+		width: 100%;
+		@include media-breakpoint-up(xl){
+
+			height: rem(358px);
+		}
+		height: rem(100px);
+		background-image: url(../img/svg/holiday-after.svg);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+	}
+	--sPB: #{rem(0)};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	h2{
+		text-transform: uppercase;
+		font-family: inherit;
+		color: #3AB8FC;
+		@include rfs(38px);
+		font-weight: 900;
+		flex: 0 0 auto;
+		@include media-breakpoint-down(xl){
+			margin-left: auto;
+			margin-right: auto;
+		}
+		max-width: rem(702);
+		position: relative;
+		h2{
+			align-self: flex-start;
+		}
+		z-index: 2;
+		&::before,
+		&::after{
+			content:  url(../img/holiday-after.svg);
+			position: absolute;
+		}
+		&::after{
+			left: 100%;
+			transform: rotate(180deg);
+			top: -80%;
+		}
+		
+		&::before{
+			right: 100%;
+			top: 50%;
+		}
+
+	}
+	.section-title{
+		// max-width: rem(672);
+		// margin-left: auto;
+		// margin-right: auto;
+		@include media-breakpoint-up(xl) {
+			// flex-wrap: wrap;
+			display: flex;
+		}
+		align-items: flex-start;
+		img{
+			// margin-top: -100px;
+			@include media-breakpoint-down(sm) {
+				max-width: 100%;
+				height: auto;
+			}
+			&:nth-child(3){ 
+				@include media-breakpoint-up(sm) {
+				margin-top: -50px;
+				}
+				@include media-breakpoint-up(xl) {
+					margin-top: 0px;
+					
+					order:-1;
+					margin-top: 100px;
+				}
+				order: 1;
+				// align-self: flex-end;
+			}
+			&:nth-child(2) {
+				@include media-breakpoint-up(sm){
+
+					margin-top: -140px;
+					margin-bottom: -50px;
+				}
+				@include media-breakpoint-up(xl) {
+				margin-left: -240px;
+			}
+			}
+		}
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {
+		text-align: center;
+	}
+} // end.sHoliday

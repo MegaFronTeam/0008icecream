@@ -1,0 +1,18 @@
+mixin sProgram(data)
+	// start sProgram
+	+b.SECTION.sProgram.section.bg-wrap#sProgram&attributes(attributes)
+		+pic("program-bg.png").picture-bg
+		.container
+			.row
+				+e.col.col-xxl-9.col-lg-8
+					+b.section-title
+						h2 Интерактивная программа
+					ul
+						li 9 – 10 сентября c 10:00 до 22:00
+						li 11 сентября с 10:00 до 20:00
+				.col-auto
+					img(src="img/cloud.svg", alt="")
+			+img("img/@2x/map.png").img
+			.text-center
+				+e.btn(href="#") пОЛНАЯ программА фестиваля
+	// end sProgram

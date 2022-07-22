@@ -1,0 +1,14 @@
+mixin sOpen(data)
+	// start sOpen
+	+b.SECTION.sOpen.section#sOpen&attributes(attributes)
+		include svg.svg
+		.container
+			.row
+				.col-lg-6.order-lg-last
+					h2 Официальное открытие ФЕСТИВАЛЯ 
+					.d-none.d-lg-block
+						+img("img/svg/open-img.svg") 
+				.col-lg-6
+					+img("img/svg/cloud-open.svg")
+					p Заходи в&nbsp;нашу группу #[a(href="#" target="_blank") ВКонтакте] и&nbsp;выиграй билет!
+	// end sOpen

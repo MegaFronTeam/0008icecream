@@ -1,0 +1,12 @@
+mixin sLogo(data)
+	// start sLogo
+	+b.SECTION.sLogo.section#sLogo&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Партнеры
+				
+			.row
+				- for (var x = 1; x < 4; x++)
+					.col-sm-4.col-6
+						+img(`img/logo-${x}.png`)
+	// end sLogo

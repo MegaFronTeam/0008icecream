@@ -1,0 +1,17 @@
+mixin footer()
+	+b.FOOTER.footer
+		.container
+			+img("img/footer.png")
+			.col-lg-6.ms-auto
+				+e.content.section
+					p: strong Руководитель по развитию:
+					p Кривц Ольга Константиновна
+					p: a(href="tel:+7(905)7367606") +7 (905)-736-76-06
+					br
+					br
+					p: strong Руководитель по развитию:
+					p Жмаченко Валерия Игоревна
+					p: a(href="tel:+7(999)5843003") +7 (999)-584-30-03
+		+e.line
+			a(href="#" target="_blank")
+				img(src="img/vk-btn.svg", alt="")

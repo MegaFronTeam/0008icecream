@@ -1,0 +1,16 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section.bg-wrap#headerBlock&attributes(attributes)
+		include bg.svg
+		+pic(`head-right.png`,'bg').picture-bg.bg-2
+		+pic(`head-left.png`).picture-bg.bg-1
+		.container 
+			.row
+				.col-xl-6.col-lg-7
+					+e.sub-title КУЛИНАРНЫЙ ФЕСТИВАЛЬ КУЛЬТУРНОЕ НАСЛЕДИЕ
+					h1 «МОРОЖЕНОЕ 2022»
+					p с 9 по 11 сентября
+		+e.btn-wrap
+			+pic("btn-up.png")
+			+e.btn(href="#") КУПИТЬ БИЛЕТ
+	// end headerBlock

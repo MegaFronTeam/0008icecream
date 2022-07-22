@@ -1,0 +1,100 @@
+// start .sOpen
+.sOpen {
+	--sPT: #{rem(300)};
+	// --sPB: #{rem(160)};
+	--sPB: #{rem(100)};
+	@include media-breakpoint-up(lg) {
+		--sPB: #{rem(180)};
+		h2{
+			margin-bottom: rem(100);
+		}
+	}
+
+	// --sTPB: #{rem()};
+	position: relative;
+	z-index: 2;
+	h2{
+		color: #fff;
+		font-weight: 900;
+		font-family: inherit;
+		max-width: rem(572);
+
+	}
+	svg{
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.row{
+		--bs-gutter-x: #{rem(140)};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	p{
+		position: relative;
+		@include media-breakpoint-up(md) {
+
+		}
+		text-align: right;
+		color: #46F4FA;
+		font-weight: 900;
+		@include rfs(50px);
+		line-height: 1.2;
+		// max-width: 480px;
+		a{
+			color: #46F4FA;
+			border-bottom: 1px solid ;
+			&:hover{
+				border-color: transparent;
+			}
+			position: relative;
+			@include media-breakpoint-up(md) {
+
+				&::before{
+					content: url(../img/svg/arrow.svg);
+					position: absolute;
+					left: 105%;
+					top: -15px;
+				}
+			}
+		}
+		&::before{
+			content: url(../img/svg/vk.svg);
+			position: relative;
+			left: -10px;
+			bottom: -10px;
+		}
+		&::before{
+			content: url(../img/svg/vk.svg);
+		}
+		@include media-breakpoint-up(md) {
+
+			&::after{
+				content: url(../img/svg/ticket.svg);
+				position: absolute;
+				left: 95%;
+				top: 90%;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sOpen

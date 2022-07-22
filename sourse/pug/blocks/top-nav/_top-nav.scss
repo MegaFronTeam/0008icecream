@@ -1,0 +1,73 @@
+.top-nav {
+	// background: svg-load('../svg/check.svg',  stroke=$primary); 
+	// 
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1200;
+	background-color: #fff;
+	// padding: 10px 0;
+	@include media-breakpoint-up(lg) {
+
+	}
+	// padding-top: 10px;
+	&::before{
+		// content: '';
+		// position: absolute;
+		// left: 0;
+		// width: 100%;
+		// height: 100%;
+		// top: 0;
+		// background-color: #fff;
+	}
+	
+	// z-index: 2;
+	svg{
+		position: absolute;
+		left: 0;
+		top: -10px;
+		width: 100%;
+		// z-index: -1;
+		z-index: 1199;
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+	} 
+	.menu{
+		z-index: 1200;
+	}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	// 
+	@include media-breakpoint-between(md, xl) {}
+
+	// 
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	// 
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
+}
+
+

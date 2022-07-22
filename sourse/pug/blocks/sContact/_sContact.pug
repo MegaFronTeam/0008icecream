@@ -1,0 +1,15 @@
+mixin sContact()
+	// start sContact
+	+b.SECTION.sContact.section#sContact&attributes(attributes)
+		.container
+			.row
+				.col-lg-auto.order-lg-last
+					+b.section-title
+						h2 Как добраться
+						p Фестиваль пройдёт на территории Всеросийского музея декоративного искусства.
+
+						p По адресу: ул. Делегатская, д.3
+				.col
+					+e.map-wrap
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb80777ba718df34fd943e37fd42149fbab479a59e290814f108f29621eaa387&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+	// end sContact

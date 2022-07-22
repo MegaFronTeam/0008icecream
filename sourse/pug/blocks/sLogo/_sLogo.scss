@@ -1,0 +1,49 @@
+// start .sLogo
+.sLogo {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	.container{
+		position: relative;
+		@include media-breakpoint-up(lg) {
+
+			&::before{
+				content: url(../img/@2x/webp/logo-after.webp);
+				right: 100%;
+				top:  calc(-1 * var(--sPT) - 50px);
+				position: absolute;
+			}
+		}
+	}
+
+	.row{
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+	}
+	img{
+		@extend .res-i;
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sLogo
