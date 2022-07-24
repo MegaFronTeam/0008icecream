@@ -27,48 +27,11 @@ global $get_template_directory_uri,
 <div id="modal-call" style="display: none">
 	<div class="modal-win">
 		<div class="form-wrap">
-			<form>
-				<div class="text-center">
-					<div class="form-wrap__title">Заявка на участие
-					</div>
+			<div class="text-center">
+				<div class="form-wrap__title">Заявка на участие
 				</div>
-				<div class="form-wrap__input-wrap form-group">
-					<label><input class="form-wrap__input form-control" name="tel" type="tel" placeholder="телефон" required="required"/><span class="form-wrap__input-title">телефон</span>
-					</label>
-				</div>
-				<!-- +e.input-wrap-->
-				<div class="form-wrap__input-wrap form-group">
-					<label><input class="form-wrap__input form-control" name="text" type="text" placeholder="название организации" required="required"/><span class="form-wrap__input-title">название организации</span>
-					</label>
-				</div>
-				<!-- +e.input-wrap-->
-				<div class="form-wrap__input-wrap form-group">
-					<label><input class="form-wrap__input form-control" name="text" type="text" placeholder="E-ФИО" required="required"/><span class="form-wrap__input-title">E-ФИО</span>
-					</label>
-				</div>
-				<!-- +e.input-wrap-->
-				<div class="form-wrap__input-wrap form-group">
-					<label><input class="form-wrap__input form-control" name="text" type="text" placeholder="E-mail*" required="required"/><span class="form-wrap__input-title">E-mail*</span>
-					</label>
-				</div>
-				<!-- +e.input-wrap-->
-				<div class="form-wrap__input-wrap form-group">
-					<label><input class="form-wrap__input form-control" name="text" type="text" placeholder="Должность" required="required"/><span class="form-wrap__input-title">Должность</span>
-					</label>
-				</div>
-				<!-- +e.input-wrap-->
-				<div class="form-wrap__input-wrap form-group">
-					<label><textarea class="form-wrap__input form-control" name="textarea" placeholder="Дополнительно"></textarea><span class="form-wrap__input-title">Дополнительно</span>
-					</label>
-				</div>
-				<!-- +e.input-wrap-->
-				<button class="form-wrap__btn" type="submit">  Подать заявку
-				</button>
-				<div class="form-wrap__policy">
-					<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><span class="custom-input__tex">Я СОГЛАСЕН-(а) С <a href="#">ПРАВИЛАМИ АКЦИИ</a> И НА <a href="#">ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</a></span>
-					</label>
-				</div>
-			</form>
+			</div>
+			<?php echo do_shortcode('[contact-form-7 id="124" title="Модальное окно"]'); ?>
 		</div>
 		<div class="modal-win__footer">
 		</div>

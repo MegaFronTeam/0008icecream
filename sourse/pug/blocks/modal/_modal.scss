@@ -13,11 +13,12 @@
 	max-width: 100%;
 	position: relative;
 	width: rem(650);
-	// min-height: 100%; 
+	// min-height: 100%;
 	padding: 40px 20px;
 	padding-bottom: 60px;
+	overflow: hidden;
 	box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.28);
-	border-radius: 32px; 
+	border-radius: 32px;
 	background-image: url(../img/modal.svg);
 	background-repeat: no-repeat;
 	background-position: left bottom;
@@ -26,32 +27,50 @@
 			content: url(../img/modal-3.svg);
 			position: absolute;
 			bottom: 156px;
+			pointer-events: none;
 			left: 15px;
 		}
-		
+
 		&::after{
 			content: url(../img/modal-4.svg);
 			position: absolute;
-			bottom: 120px;
 			// left: 0;
+			@include media-breakpoint-up(sm) {
+
+			bottom: 120px;
 			right: 10px;
-		} 
+			}
+			right: -10px;
+			bottom: 40px;
+			pointer-events: none;
+		}
 
 	}
 		&::before{
 			content: url(../img/modal-1.svg);
 			position: absolute;
+			pointer-events: none;
+			@include media-breakpoint-up(sm) {
 			top: 56px;
 			left: 0;
+			}
+			top: 6px;
+			left: -10px;
+
 		}
-		
+
 		&::after{
 			content: url(../img/modal-2.svg);
+			pointer-events: none;
 			position: absolute;
 			top: 80px;
 			// left: 0;
+			@include media-breakpoint-up(sm){
+
 			right: 0;
-		} 
+			}
+			right: -10px;
+		}
 form{
 	margin-left: auto;
 	margin-right: auto;
@@ -148,7 +167,7 @@ a {
 }
 
 
-// 
+//
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}
@@ -159,10 +178,10 @@ a {
 
 @include media-breakpoint-up(xs) {}
 
-// 
+//
 @include media-breakpoint-between(md, xl) {}
 
-// 
+//
 @include media-breakpoint-only(xs) {}
 
 @include media-breakpoint-only(sm) {}
@@ -173,7 +192,7 @@ a {
 
 @include media-breakpoint-only(xl) {}
 
-// 
+//
 @include media-breakpoint-down(xl) {}
 
 @include media-breakpoint-down(lg) {}
@@ -186,7 +205,7 @@ a {
 
 	.fancybox__container {
 		width: 100% !important;
-		min-height: 100%; 
+		min-height: 100%;
 		transform: none !important;
 	}
 }
@@ -206,7 +225,7 @@ a {
     transform: translate3d(0, -5%, 0);
     opacity: 0;
   }
-	
+
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;

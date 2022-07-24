@@ -3,6 +3,8 @@
 	background: #1ADCC3;
 	--sPT: #{rem(0)};
 	--sPB: #{rem(0)};
+	position: relative;
+	z-index: 2;
 	// --sTPB: #{rem()};
 	&__row{
 		// --bs-gutter-x: #{rem()};
