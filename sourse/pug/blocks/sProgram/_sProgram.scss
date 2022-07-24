@@ -93,6 +93,10 @@
 		}
 	}
 	&__map-wrap{
+		img{
+			max-width: 100%;
+			height: auto;
+		}
 	@include media-breakpoint-up(xl) {
 
 		margin-top: -50px;

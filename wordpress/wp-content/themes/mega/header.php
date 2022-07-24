@@ -45,12 +45,12 @@ global $get_template_directory_uri,
 			<div class="menu-mobile menu-mobile--js">
 				<div class="menu-mobile__inner">
 					<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О проекте</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Партнеры</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Для экспонентов и партнеров</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Как добраться</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+						<li class="menu-item" itemprop="item"><a href="#sAbout" itemprop="url">О проекте</a></li>
+						<li class="menu-item" itemprop="item"><a href="#sProgram" itemprop="url">Партнеры</a></li>
+						<li class="menu-item" itemprop="item"><a href="#sOpen" itemprop="url">Новости</a></li>
+						<li class="menu-item" itemprop="item"><a href="#sExperts" itemprop="url">Для экспонентов и партнеров</a></li>
+						<li class="menu-item" itemprop="item"><a href="#sContact" itemprop="url">Как добраться</a></li>
+						<li class="menu-item" itemprop="item"><a href="#footer" itemprop="url">Контакты</a></li>
 					</ul>
 				</div>
 			</div>

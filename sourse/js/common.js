@@ -1,5 +1,5 @@
 "use strict";
-const JSCCommon = { 
+const JSCCommon = {
 	modalCall() {
 		const link = '[data-fancybox="modal"], .link-modal-js';
 
@@ -79,7 +79,7 @@ const JSCCommon = {
 		}
 
 	},
-	mobileMenu() { 
+	mobileMenu() {
 		const menu = document.querySelector(".menu-mobile--js");
 		if (!menu) return;
 		this.toggleMenu();
@@ -87,7 +87,7 @@ const JSCCommon = {
 			let container = event.target.closest(".menu-mobile--js.active"); // (1)
 			let link = event.target.closest(".menu-mobile .menu a"); // (1)
 			let toggle = event.target.closest('.toggle-menu-mobile--js.on'); // (1)
-			if (!container && !toggle) this.closeMenu();
+			if (!container && !toggle || link) this.closeMenu();
 		}, { passive: true });
 
 		window.addEventListener('resize', () => {
@@ -297,8 +297,8 @@ function eventHandler() {
 	JSCCommon.makeDDGroup();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
-	
-	// JSCCommon.CustomInputFile(); 
+
+	// JSCCommon.CustomInputFile();
 	var x = window.location.host;
 	let screenName;
 	screenName = document.body.dataset.bg;

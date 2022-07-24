@@ -115,7 +115,9 @@
 					<div class="col-auto">
 						<?= wp_get_attachment_image(get_field('cloud'), 'full');?></div>
 				</div>
-				<?= wp_get_attachment_image(get_field('map'), 'full');?>
+				<div class="sProgram__map-wrap">
+					<?= wp_get_attachment_image(get_field('map'), 'full');?>
+				</div>
 				<div class="text-center">
 					<a class="sProgram__btn" href="#">пОЛНАЯ программА фестиваля
 					</a>
@@ -322,7 +324,7 @@
 			</div>
 		</section>
 		<!-- end sContact-->
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				<img src="<?= $get_template_directory_uri;?>/public/img/footer.png" alt="" loading="lazy"/>
 				<div class="col-lg-6 ms-auto">

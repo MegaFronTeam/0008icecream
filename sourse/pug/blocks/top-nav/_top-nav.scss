@@ -1,11 +1,11 @@
 .top-nav {
-	// background: svg-load('../svg/check.svg',  stroke=$primary); 
-	// 
+	// background: svg-load('../svg/check.svg',  stroke=$primary);
+	//
 	position: fixed;
 	width: 100%;
 	left: 0;
 	top: 0;
-	z-index: 900;
+	z-index: 1200;
 	// padding: 10px 0;
 	@include media-breakpoint-up(lg) {
 		background-color: #fff;
@@ -21,7 +21,7 @@
 		// top: 0;
 		// background-color: #fff;
 	}
-	
+
 	// z-index: 2;
 	svg{
 		position: absolute;
@@ -29,11 +29,11 @@
 		top: -10px;
 		width: 100%;
 		// z-index: -1;
-		
+
 		@include media-breakpoint-down(lg) {
 			display: none;
 		}
-	} 
+	}
 	.menu{
 		// z-index: 1200;
 	}
@@ -44,10 +44,10 @@
 
 	@include media-breakpoint-up(xs) {}
 
-	// 
+	//
 	@include media-breakpoint-between(md, xl) {}
 
-	// 
+	//
 	@include media-breakpoint-only(xs) {}
 
 	@include media-breakpoint-only(sm) {}
@@ -58,7 +58,7 @@
 
 	@include media-breakpoint-only(xl) {}
 
-	// 
+	//
 	@include media-breakpoint-down(xl) {}
 
 	@include media-breakpoint-down(lg) {}
