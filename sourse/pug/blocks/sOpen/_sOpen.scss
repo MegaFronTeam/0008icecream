@@ -37,7 +37,7 @@
 
 	}
 	.section-title{
-		
+
 	}
 	&__col{
 
@@ -95,6 +95,9 @@
 				top: 90%;
 			}
 		}
+	}
+	.d-none.d-lg-block img{
+		margin-left: 40px;
 	}
 
 	@include media-breakpoint-up(xl) {}

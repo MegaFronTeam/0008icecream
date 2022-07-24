@@ -36,15 +36,15 @@
 
 	}
 	.section-title{
-		
+
 	}
- 
+
 		.img{
 			height: auto;
 			@include media-breakpoint-down(xl) {
 				max-width: 100%;
 			}
-		} 
+		}
 	&__item{
 
 	}
@@ -88,9 +88,15 @@
 			top: 110%;
 			left: 50%;
 			transform: translateX(-50%);
-			background: radial-gradient(50% 50% at 50% 50%, rgba(107, 151, 200, 0.82) 0%, rgba(107, 151, 200, 0) 100%);
+			background: radial-gradient(50% 50% at 50% 50%, rgba(107, 151, 200, 0.57) 0%, rgba(107, 151, 200, 0) 100%);
 			position: absolute;
 		}
+	}
+	&__map-wrap{
+	@include media-breakpoint-up(xl) {
+
+		margin-top: -50px;
+	}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -99,4 +105,16 @@
 	@include media-breakpoint-between(md, xl) {}
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {
+		.picture-bg{
+			width: 200px;
+			//left: 0;
+			right: -100px;
+			left: auto;
+			height: 200px;
+		}
+		.col-auto img {
+			display: none;
+		}
+	}
 } // end.sProgram

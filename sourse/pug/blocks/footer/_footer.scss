@@ -1,5 +1,5 @@
 .footer {
-		
+
 	background: #C9BAE5;
 	display: flex;
 	flex-direction: column;
@@ -12,7 +12,7 @@
 		img{
 			position: absolute;
 			top: 0;
-			
+
 			@include media-breakpoint-up(xxl) {
 
 				right: 58%;
@@ -34,7 +34,7 @@
 		--bs-link-color: #000;
     // --bs-link-hover-color: #000;
 	}
-// 
+//
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}
@@ -46,11 +46,11 @@
 @include media-breakpoint-up(xs) {}
 
 
-// 
+//
 @include media-breakpoint-between(md, xl) {}
 
 
-// 
+//
 @include media-breakpoint-only(xs) {}
 
 @include media-breakpoint-only(sm) {}
@@ -62,7 +62,7 @@
 @include media-breakpoint-only(xl) {}
 
 
-// 
+//
 @include media-breakpoint-down(xl) {}
 
 @include media-breakpoint-down(lg) {}
@@ -97,7 +97,7 @@
 		content: '';
 		position: absolute;
 		width: 130%;
-		left: -15px;
+		left: -15%;
 		height: rem(254);
 		pointer-events: none;
 		background-size: cover;

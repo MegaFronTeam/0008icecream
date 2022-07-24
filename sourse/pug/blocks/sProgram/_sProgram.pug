@@ -12,7 +12,8 @@ mixin sProgram(data)
 						li 11 сентября с 10:00 до 20:00
 				.col-auto
 					img(src="img/cloud.svg", alt="")
-			+img("img/@2x/map.png").img
+			+e.map-wrap
+				+img("img/@2x/map.png").img
 			.text-center
 				+e.btn(href="#") пОЛНАЯ программА фестиваля
 	// end sProgram
